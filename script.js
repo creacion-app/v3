@@ -125,7 +125,7 @@ const statObserver = new IntersectionObserver((entries) => {
 const heroStats = document.querySelector('.hero-stats');
 if (heroStats) statObserver.observe(heroStats);
 
-/* ---- MENU TABS ---- */
+/* ---- PRODUCT TABS ---- */
 const tabBtns   = document.querySelectorAll('.tab-btn');
 const menuCards = document.querySelectorAll('.menu-card');
 
@@ -338,7 +338,7 @@ if (contactForm) {
       contactForm.reset();
       formSuccess.classList.add('visible');
       btn.disabled = false;
-      btn.querySelector('span').textContent = 'Sipariş Talebini Gönder';
+      btn.querySelector('span').textContent = 'Mesajı Gönder';
 
       setTimeout(() => formSuccess.classList.remove('visible'), 6000);
     }, 1400);
