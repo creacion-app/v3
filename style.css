@@ -248,8 +248,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   justify-content: space-between;
 }
 
-.nav-logo { display: flex; align-items: center; }
-
 .nav-logo {
   display: flex;
   align-items: center;
