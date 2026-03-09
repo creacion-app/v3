@@ -250,16 +250,25 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 .nav-logo { display: flex; align-items: center; }
 
-.nav-logo-img {
-  height: 44px;
-  width: auto;
-  object-fit: contain;
-  filter: brightness(0) invert(1);
-  transition: filter var(--transition);
+.nav-logo {
+  display: flex;
+  align-items: center;
+  background: rgba(255,255,255,0.95);
+  border-radius: 8px;
+  padding: 5px 10px;
+  transition: background var(--transition);
 }
 
-.navbar.scrolled .nav-logo-img {
-  filter: none;
+.navbar.scrolled .nav-logo {
+  background: rgba(255,255,255,0.9);
+}
+
+.nav-logo-img {
+  height: 36px;
+  width: auto;
+  max-width: 160px;
+  object-fit: contain;
+  display: block;
 }
 
 .nav-links {
@@ -434,9 +443,13 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   border: 1px solid rgba(245,166,35,.25);
   border-radius: 50px;
   font-size: 0.78rem;
+  line-height: 1.5;
   color: rgba(255,255,255,.55);
   transition: var(--transition);
   cursor: default;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
 }
 
 .fruit-pill:hover {
@@ -502,9 +515,18 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 .pillar-icon {
   color: var(--gold);
-  font-size: 0.85rem;
+  width: 20px;
+  height: 20px;
   flex-shrink: 0;
-  margin-top: 0.2rem;
+  margin-top: 0.15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pillar-icon svg {
+  width: 18px;
+  height: 18px;
 }
 
 .pillar h4 {
@@ -817,9 +839,18 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 .retail-icon {
   color: var(--gold);
-  font-size: 1.5rem;
+  width: 36px;
+  height: 36px;
   margin-bottom: 1rem;
-  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.retail-icon svg {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
 }
 
 .retail-card h3 {
@@ -953,9 +984,19 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 .log-icon {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  display: block;
+  color: var(--gold);
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.log-icon svg {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
 }
 
 .log-card h3 {
@@ -1086,9 +1127,18 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 .dist-feat span {
-  font-size: 1.25rem;
+  width: 28px;
+  height: 28px;
   flex-shrink: 0;
-  line-height: 1.4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+}
+
+.dist-feat span svg {
+  width: 22px;
+  height: 22px;
 }
 
 .dist-feat p {
@@ -1348,12 +1398,16 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 .footer-logo {
-  height: 40px;
+  height: 36px;
   width: auto;
+  max-width: 160px;
   object-fit: contain;
   object-position: left;
-  filter: brightness(0) invert(1);
+  background: rgba(255,255,255,0.9);
+  border-radius: 6px;
+  padding: 4px 10px;
   margin-bottom: 1.25rem;
+  display: block;
 }
 
 .footer-brand p {
